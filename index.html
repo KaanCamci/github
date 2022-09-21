@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <title>Github</title>
+
+    <style>
+
+    @media screen and (max-width: 600px) {
+        
+        .flex-box{
+            justify-content: center;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container bg-danger text-center" style="padding: 2vh;">
+        <h1 class="text-light">Search An User</h1>
+
+        <div class="input-group" style="width: 50%; margin: 0 auto;">
+            <input type="text" class="form-control" placeholder="Username" id="username-input">
+          </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container" style="margin: 0 2vw;">
+        <img src="https://avatars.githubusercontent.com/u/107057295?v=4" alt="Profile Avatar" style="float: left;" id="profilePicture">
+        <span style="font-size: 45px;">Personal Infos </span>
+        <ul style="list-style: none; font-size: 30px;" id="personalInfos">
+            <li>
+                <span>Name: </span>
+            </li>
+            <li>
+                <span>Bio: </span>
+            </li>
+            <li>
+                <span>Company: </span>
+            </li>
+            <li>
+                <span>Location: </span>
+            </li>
+            <li>
+                <span>Repos: </span>
+            </li>
+            <li>
+                <span>Followers: </span>
+            </li>
+        </ul>
+        
+    </div>
+
+    <hr>
+
+              <div class="flex-box" id="repos-area" style="display: flex; flex-wrap: wrap;">
+
+
+              </div>
+
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
